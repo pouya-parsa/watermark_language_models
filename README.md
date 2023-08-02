@@ -20,8 +20,16 @@ This code examines the approach by:
 The main experiments replicate analyses from the paper:
 
 - Watermark strength vs sequence length
+<p float="left">
+    <img src="./img/output.png" width="44%" />
+    <img src="./img/delta.png" width="45%" />
+</p>
+
 - Tradeoff between quality and detection
 - The code evaluates how z-score and perplexity change for different watermark hyperparameters δ and γ.
+<br/>
+<img src="./img/ppl.png" width="50%" />
+
 
 ## Results
 The analyses validate core trends from the paper, providing insights into the approach:
@@ -31,6 +39,9 @@ The analyses validate core trends from the paper, providing insights into the ap
 - However, effectiveness depends on the dataset properties.
 
 ## Install requirements
+```bash
+pip install -r requirements.txt
+```
 Run watermark_for_LLM.ipynb
 This will output figures and metrics for the different experiments.
 
